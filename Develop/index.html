@@ -19,148 +19,145 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <main class="time-block">
-    <div class="container">
 
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 9am </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeNine"> 9am </div>
       </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 10am </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description" name="enter-task"></textarea>
       </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 11am </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
       </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 12pm </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 1pm </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 2pm </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 3pm </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 4pm </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <!-- hour -->
-          <div class="hour"> 5pm </div>
-        </div>
-        <div class="col-6">
-          <!-- task field -->
-          <input type='text' id='enter-task' class="description"></input>
-        </div>
-        <div class="col-3" id="save-task">
-          <!-- save button -->
-          <button class="saveBtn" id="saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </div>
-
-
-
     </div>
-  </main>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeTen"> 10am </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeEleven"> 11am </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeTwelve"> 12pm </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeOne"> 1pm </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeTwo"> 2pm </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeThree"> 3pm </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeFour"> 4pm </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <!-- hour -->
+        <div class="hour" id="timeFive"> 5pm </div>
+      </div>
+      <div class="col-8">
+        <!-- task field -->
+        <textarea type='text' id='enter-task' class="description"></textarea>
+      </div>
+      <div class="col-2" id="save-task">
+        <!-- save button -->
+        <button class="saveBtn" id="saveBtn" type="submit"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>
