@@ -25,11 +25,17 @@ window.onload = function (){
 
 // click to save to localStorage so entered text remains when page is refreshed
 $('#saveBtn').click(function(){
-    localStorage.setItem("task-textarea", JSON.stringify(textarea));
+    // get nearby values
+    var value = $(this).siblings('.description').val();
+    var time = $(this).parent().attr('id');
+
+    // save in localStorage
+    localStorage.setItem(time, value);
 }
 );
 
 // Time Comparison Function 
+// var auditTask = 
 var future = moment().isBefore(currentHour);
 var past = moment().isAfter(currentHour);
 var present = moment().isSame(currentHour);
