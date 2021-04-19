@@ -23,28 +23,19 @@ window.onload = function (){
     document.getElementById('currentDay').innerHTML = currentDay;
 };
 
+// click to save to localStorage so entered text remains when page is refreshed
 $('#saveBtn').click(function(){
     localStorage.setItem("task-textarea", JSON.stringify(textarea));
 }
 );
 
-// // save to local storage when button is clicked 
-// saveButtonEl.addEventListener("click", function(){
-//     alert("Button clicked");
-// });
-
-
-
-
-// $("#taskInput .saveBtn").click(function(){
-// });
-// var then = moment().hour(time);
-
-// var future = moment().isBefore(then);
-// var past = moment().isAfter(then);
-// var present = moment().isSame(then);
+// Time Comparison Function 
+var future = moment().isBefore(currentHour);
+var past = moment().isAfter(currentHour);
+var present = moment().isSame(currentHour);
 
 // if (future === true) {
 //     $()
 // }
+
 
