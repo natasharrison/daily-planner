@@ -3,9 +3,10 @@ var currentDay = moment().format('MMMM Do YYYY');
 // current hour in military time
 var currentHour = moment().format('H');
 
-// var taskInput = document.querySelector("input[name='enter-task']").value;
-// do I need to append this anywhere?
+var textarea = document.querySelector("#task-textarea").value;
+
 var saveButtonEl = document.querySelector("#saveBtn");
+
 // Hour variables 
 var nineEl = document.querySelector("#timeNine").innerText;
 var tenEl = document.querySelector("#timeTen").innerText;
@@ -22,28 +23,28 @@ window.onload = function (){
     document.getElementById('currentDay').innerHTML = currentDay;
 };
 
-// // save to local storage when button is clicked 
-saveButtonEl.addEventListener("click", function(){
-    alert("Button clicked");
-});
-// define 'tasks' in the JSON.stringify function 
-
-
-var loadTasks = function(){
-    var savedTasks = localStorage.getItem("taskInput");
-
-    savedTasks = JSON.parse(savedTasks);
-
+$('#saveBtn').click(function(){
+    localStorage.setItem("task-textarea", JSON.stringify(textarea));
 }
+);
+
+// // save to local storage when button is clicked 
+// saveButtonEl.addEventListener("click", function(){
+//     alert("Button clicked");
+// });
+
+
+
 
 // $("#taskInput .saveBtn").click(function(){
 // });
-var then = moment().hour(time);
+// var then = moment().hour(time);
 
-var future = moment().isBefore(then);
-var past = moment().isAfter(then);
-var present = moment().isSame(then);
+// var future = moment().isBefore(then);
+// var past = moment().isAfter(then);
+// var present = moment().isSame(then);
 
-if (future === true) {
-    $()
-}
+// if (future === true) {
+//     $()
+// }
+
